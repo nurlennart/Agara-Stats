@@ -50,8 +50,8 @@ def showCurrentStats():
     stdscr.clear()
     stdscr.addstr(0, 0, "==== Agara Stats ====")
     stdscr.addstr(0, 50, "Updated every {0} seconds".format(int(parser.get('refresh_delay', 'delay'))))
-    stdscr.addstr(1, 0, "Messagecount in Database: {0}".format(message_count))
-    stdscr.addstr(2, 0, "Users in Database: {0}".format(user_count))
+    stdscr.addstr(1, 0, "Users in Database: {0}".format(user_count))
+    stdscr.addstr(2, 0, "Messagecount in Database: {0}".format(message_count))
     stdscr.addstr(3, 0, "Total Balance from all users in db: {0}".format(total_balance))
 
     # refresh screen
